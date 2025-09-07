@@ -68,7 +68,7 @@ export default function RootLayout({
         <body className={`${style.body} ${fontClassStrings}`}>
           <header>
             <Header>
-              <Title text="Rijn Bot Control" />
+              <Title text="PairNote" />
             </Header>
           </header>
           <DarkModeFix>
