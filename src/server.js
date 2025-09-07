@@ -6,11 +6,6 @@ const { Server } = require("socket.io");
 const app = next({ dev: process.env.NODE_ENV !== 'production' });
 const handle = app.getRequestHandler();
 
-
-// stopped pipes from building up
-viewer.stdout.on("data", (e) => { });
-viewer.stderr.on("data", (d) => { });
-
 app.prepare().then(() => {
   const server = createServer((req, res) => {
     const parsedUrl = parse(req.url, true);
