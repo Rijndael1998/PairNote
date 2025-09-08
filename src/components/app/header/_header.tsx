@@ -17,7 +17,6 @@ export default function Header({ children }: { children: ReactNode }): JSX.Eleme
 
     return <>
         <div style={{ filter: `hue-rotate(${degRotation ?? 0}deg)` }} className={classNames(headerStyles.header, red && headerStyles.red)}>
-            <div className={slidingStyles.sliding} />
             {children}
         </div>
     </>
